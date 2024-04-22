@@ -17,7 +17,7 @@ pipeline {
         }
          stage('run'){
             steps{
-                sh 'docker run -d -p 5000:3000 Supun3998/3998-jayaweera'
+                sh 'docker run -d -p 5000:3000 ryandilz/4113-perera'
          }
          }
          stage('show running containners'){
