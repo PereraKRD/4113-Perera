@@ -1,3 +1,4 @@
+FROM node:19.9.0-alpine
 WORKDIR /app  
 COPY nodeapp/* /  
 RUN npm install  
