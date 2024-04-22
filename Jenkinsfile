@@ -4,14 +4,14 @@ pipeline {
         stage ('SCM checkout'){
             steps{
                 retry(3){
-                    checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/SupunTJ/3998-jayaweera']])
+                    checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/PereraKRD/4113-Perera.git']])
                 }
             }
       
         }
         stage('build docker'){
             steps {
-                sh 'docker build -t Supun3998/3998-jayaweera .'
+                sh 'docker build -t ryandilz/4113-perera .'
             }
         
         }
